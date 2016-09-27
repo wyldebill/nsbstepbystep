@@ -53,8 +53,6 @@ class Program
         while (true)
         {
             var entry = Console.ReadLine();
-            
-
             if (entry.Equals("q"))
             {
                 return;
@@ -65,7 +63,6 @@ class Program
             {
                 Id = id
             };
-
 
             bus.Send("Samples.StepByStep.Server", placeOrder);
             Console.WriteLine($"Sent a PlaceOrder COMMAND with id: {id:N}");

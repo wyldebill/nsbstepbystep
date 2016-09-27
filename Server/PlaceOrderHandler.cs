@@ -8,7 +8,7 @@ using Shared;
 public class PlaceOrderHandler : IHandleMessages<PlaceOrder>
 {
 
-    #region intialize bus
+    #region initialize bus
     static ILog log = LogManager.GetLogger<PlaceOrderHandler>();
     IBus bus;
 
